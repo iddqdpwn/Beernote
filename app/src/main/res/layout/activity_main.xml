@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/addphoto"
+            android:background="@color/colorPrimaryDark"
+            android:layout_alignParentTop="true" />
+
+        <EditText
+            android:id="@+id/edtBreweryName"
+            android:layout_below="@id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Brewery name"
+            android:layout_centerHorizontal="true"
+            android:ems="13" />
+
+        <EditText
+            android:id="@+id/edtBeerName"
+            android:layout_below="@id/edtBreweryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Beer name"
+            android:layout_centerHorizontal="true"
+            android:ems="13" />
+
+        <EditText
+            android:id="@+id/edtNote"
+            android:layout_below="@id/edtBeerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="How was it?"
+            android:layout_centerHorizontal="true"
+            android:ems="13" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_below="@id/edtNote"
+            android:layout_centerHorizontal="true"
+            android:minWidth="150dp"
+            android:text="Save note"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnList"
+            android:layout_below="@id/btnAdd"
+            android:layout_centerHorizontal="true"
+            android:minWidth="150dp"
+            android:text="Show my notes"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</ScrollView>
