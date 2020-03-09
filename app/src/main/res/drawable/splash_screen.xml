@@ -5,6 +5,7 @@
         android:drawable="@color/colorPrimary"
         />
     <item
+
         android:gravity="center"
         android:drawable="@mipmap/ic_launcher"
         />
