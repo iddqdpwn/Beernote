@@ -14,6 +14,7 @@ import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.SystemClock;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -25,6 +26,7 @@ import com.theartofdev.edmodo.cropper.CropImageView;
 
 import java.io.ByteArrayOutputStream;
 import java.util.BitSet;
+import java.util.concurrent.TimeUnit;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -43,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(galleryIntent,REQUEST_CODE_GALLERY);
             }
             else{
-                Toast.makeText(this,"Dont have needed permission", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this,"Don't have needed permission", Toast.LENGTH_SHORT).show();
             }
             return;
         }
